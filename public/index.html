@@ -1,0 +1,1072 @@
+<!-- Change the value of lang="en" attribute if your website's language is not English.
+You can find the code of your language here - https://www.w3schools.com/tags/ref_language_codes.asp -->
+<!DOCTYPE html>
+<html lang="en">
+    <head>   
+        <script src="https://cdn.firebase.com/js/client/2.2.1/firebase.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.11.0/moment.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/blueimp-md5/2.1.0/js/md5.js"></script>
+    <script src="../js/blog.js"></script>      
+        <title>Urban Garden Dreams</title>
+        <meta name="description" content="Urban Garden Dreams">
+        <meta name="author" content="Liam Sawyer">
+        <meta charset="utf-8">
+        <!--[if IE]><meta http-equiv='X-UA-Compatible' content='IE=edge,chrome=1'><![endif]-->
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        
+        <!-- Favicons -->
+        <link rel="shortcut icon" href="images/favicon.png">
+        <link rel="apple-touch-icon" href="images/apple-touch-icon.png">
+        <link rel="apple-touch-icon" sizes="72x72" href="images/apple-touch-icon-72x72.png">
+        <link rel="apple-touch-icon" sizes="114x114" href="images/apple-touch-icon-114x114.png">
+        
+        <!-- CSS -->
+        <link rel="stylesheet" href="css/bootstrap.min.css"><!-- / bootstrap styles -->
+        <link rel="stylesheet" href="css/style.css"><!-- / template styles -->
+        <link rel="stylesheet" href="css/style-responsive.css"><!-- / responsive styles -->
+        <link rel="stylesheet" href="css/jquery.bxslider.css"><!-- / bxslider styles -->
+        
+        <!-- Icons Fonts -->
+        <script src="https://kit.fontawesome.com/550d583bad.js" crossorigin="anonymous"></script>
+        <link rel="stylesheet" href="css/font-awesome.min.css">
+        <link rel="stylesheet" href="css/simple-line-icons.css">
+
+        <!-- Color Scheme: uncomment an appropriate line to activate the color scheme -->
+        <!-- <link rel="stylesheet" href="css/colors-styles/color-blue.css"> -->
+        <!-- <link rel="stylesheet" href="css/colors-styles/color-aqua.css"> -->
+        <!-- <link rel="stylesheet" href="css/colors-styles/color-green.css"> -->
+        <!-- <link rel="stylesheet" href="css/colors-styles/color-yellow.css"> -->
+        <!-- <link rel="stylesheet" href="css/colors-styles/color-orange.css"> -->
+        <!-- <link rel="stylesheet" href="css/colors-styles/color-brown.css"> -->
+        <!-- <link rel="stylesheet" href="css/colors-styles/color-purple.css"> -->
+        <!-- <link rel="stylesheet" href="css/colors-styles/color-yellow-blue.css"> -->
+        <!-- <link rel="stylesheet" href="css/colors-styles/color-aqua-blue.css"> -->
+        <link rel="stylesheet" href="css/colors-styles/color-green-brown.css">
+        <!-- <link rel="stylesheet" href="css/colors-styles/color-red-orange.css"> -->
+        
+    </head>
+    <body>
+        
+        <!-- Page Loader -->
+        <div class="page-loader">
+            <b></b>
+        </div>
+        <!-- End Page Loader -->
+        
+        <!-- Skip to Content -->
+        <a href="#main" class="btn skip-to-content">Skip to Content</a>
+        <!-- End Skip to Content -->
+        
+        <!-- Page Wrap -->
+        <div class="page">            
+                        
+            <!-- Navigation panel -->
+            <nav class="main-nav stick-fixed">
+                <div class="full-wrapper relative clearfix">
+                    
+                    <!-- Logo ( * your text or image into link tag *) -->
+                    <div class="nav-logo-wrap">
+                        <a href="#home" class="logo dark"><img src="images/logo-dark.svg" width="86" height="27" alt="Logo" /></a>
+                    </div>
+                    
+                    <div class="mobile-nav" role="button" tabindex="0" aria-expanded="false"><i class="fa fa-bars"></i><span class="sr-only">Menu</span></div>
+                    
+                    <!-- Main Menu -->
+                    <div class="inner-nav desktop-nav">                                       
+                        <ul class="clearlist scroll-nav">
+                            <li class="active"><a href="#home">Home</a></li>
+                            <li><a href="#about-us">About us</a></li>
+                            <li><a href="#team">Team</a></li>
+                            <li><a href="#ListenNow">Listen Now</a></li>
+                            <li><a href="#Episodes">Episodes</a></li>
+                            <li><a href="#quality">Quality</a></li>
+                            <li><a href="#Availability">Availability</a></li>
+                            <li><a href="#contacts">Contacts</a></li>
+                            <!-- <li><a href="/blog">Blog</a></li> -->
+                        </ul>
+                    </div>
+                    
+                    <div class="nav-social-links right">
+                        <a href="https://podcasts.apple.com/us/podcast/life-in-focus/id1564144298" title="Apple Podcast"><i class="fa fa-podcast"></i><span class="sr-only">Apple Podcast profile</span></a>
+                        <a href="https://open.spotify.com/show/5gkU8VX2ACZ4cHDrOyxF4M" title="Spotify Podcast"><i class="fa fa-spotify"></i><span class="sr-only">Spotify Podcast profile</span></a>
+                        <a href="https://instagram.com/lifeinfocuspod?utm_medium=copy_link" title="Instagram"><i class="fa fa-instagram"></i><span class="sr-only">Instagram profile</span></a>
+                        <a href="/login/login.html" class="btn btn-spacia btn-border btn-small"><i class="loginbutton"></i><span >Account</span></a>
+                    </div>
+                
+                 </div>
+            </nav>        
+            <!-- End Navigation panel -->
+            
+            <main id="main" role="main">
+            
+                <!-- Home Section -->
+                <section class="home-section" id="home">
+                    <div style="background-color:rgb(75, 116, 96);
+                    background-image:
+                    radial-gradient(at 71% 93%, hsla(148,33%,54%,1) 0px, transparent 50%),
+                    radial-gradient(at 85% 53%, hsla(104,24%,61%,1) 0px, transparent 50%),
+                    radial-gradient(at 81% 72%, hsla(103,13%,37%,1) 0px, transparent 50%),
+                    radial-gradient(at 52% 18%, hsla(103,17%,51%,1) 0px, transparent 50%),
+                    radial-gradient(at 31% 66%, hsla(103,15%,52%,1) 0px, transparent 50%),
+                    radial-gradient(at 41% 51%, hsla(100,72%,72%,1) 0px, transparent 50%),
+                    radial-gradient(at 72% 83%, hsla(105,47%,41%,1) 0px, transparent 50%);" class="image-bg parallax-2 js-height-full">
+                        
+                        <!-- Home Page Content -->
+                            <div class="home-content">
+                                <div class="home-text">
+                                        
+                                    <div class="row">
+                            
+                                        <div class="col-md-6">
+                                            <ul class="headings clearlist js-word-sliding" aria-roledescription="carousel">
+                                                <li aria-roledescription="slide"><h1>Urban Garden Dreams</h1></li>
+                                                <li aria-roledescription="slide"><h1>Meaningful and Thought Provoking Discussions</h1></li>
+                                            </ul>
+                                        
+                                            <h2 class="home-description">Plant guides rooted in <i>love</i></h2>
+                                            <h3 class="home-subdescription">brought to you by Sawyer Original</h3>
+                                        
+                                            <!-- Call Action -->
+                                            <div class="home-call-action animate">
+                                                <a href="#about-us" class="btn btn-spacia btn-border-w btn-large">Show Me More</a>
+                                                <span class="separ-space">&nbsp;</span>
+                                                <a href="#ListenNow" class="btn btn-spacia btn-w btn-large">Listen Now</a>
+                                            </div>
+                                        </div>
+                                    
+                                        <div class="col-md-6">
+                                            <img src="/images/UrbanGardenDreams.svg" alt="Urban Garden Dreams Logo" class="img-rounded" style="width: 50%; height: 50%; position: center;">
+                                        </div>
+                                    
+                                    </div>
+                                
+                                </div>
+                            </div>
+                    
+                        <!-- End Home Page Content -->
+                        
+                    </div>
+                </section>
+                <!-- End Home Section -->
+    
+                
+                <!-- About Us Section -->
+                <section class="page-section" id="about-us">
+                    <div class="container">
+                        <div class="row">
+                            <div class="col-md-8 col-md-offset-2 col-lg-8 col-lg-offset-2">
+                                
+                                <h2 class="section-title margin-top-null">
+                                    About us
+                                </h2>
+                                
+                                <h3 class="section-heading">What is Sawyer Original?</h3>
+                                
+                                <p class="section-text margin-bot-null">
+                                    It all begins with an idea and the vision at Sawyer Original is to make something that has all users in mind. This is already implemented as we have unisex clothing options and eco-friendly accessories in the store. We always want to bring this a step further and create something that everyone can use on a day-to-day basis, that’s why we are constantly trying to improve and provide products for everyone to enjoy.
+                                </p>
+                                
+                            </div>
+                        </div>
+                    </div>
+                </section>
+                <!-- End About Us Section -->
+                
+                <!-- Some Facts Section -->
+                <section style="background-image: url(images/full-width-images/section-bg-1.png);" class="small-section dark-bg image-color-bg" id="counts">
+                    <div class="bg-overlay-1"></div>
+                        <div class="container bg-content">
+                            <h3 class="small-section-heading">How about some fun facts?</h3>
+                            <!-- Counters -->
+                            <div class="row">
+                                
+                                <!-- Counter Item -->
+                                <div class="col-xs-6 col-sm-6 col-md-3 col-lg-3">
+                                    <div class="count-number">3</div>
+                                    <div class="count-icon">
+                                        <i class="fa-solid fa-tv"></i>
+                                    </div>
+                                    <div class="count-title">Podcast Channels</div>                                
+                                </div>
+                                <!-- End Counter Item -->
+                                
+                                <!-- Counter Item -->
+                                <div class="col-xs-6 col-sm-6 col-md-3 col-lg-3">
+                                    <div class="count-number">120</div>
+                                    <div class="count-icon">
+                                        <i class="fa-solid fa-volume-high"></i>
+                                    </div>
+                                    <div class="count-title">Streams</div>                                
+                                </div>
+                                <!-- End Counter Item -->
+                                
+                                <!-- Separator which need for mobile devices -->
+                                <div class="visible-xs visible-sm count-separator"> </div>
+                                
+                                <!-- Counter Item -->
+                                <div class="col-xs-6 col-sm-6 col-md-3 col-lg-3">
+                                    <div class="count-number">2</div>
+                                    <div class="count-icon">
+                                        <i class="fa-solid fa-play"></i>
+                                    </div>
+                                    <div class="count-title">Episodes</div>                                
+                                </div>
+                                <!-- End Counter Item -->
+                                
+                                <!-- Counter Item -->
+                                <div class="col-xs-6 col-sm-6 col-md-3 col-lg-3">
+                                    <div class="count-number">20</div>
+                                    <div class="count-icon">
+                                        <i class="fa-solid fa-stopwatch"></i>
+                                    </div>
+                                    <div class="count-title">Average Episode Length</div>                                
+                                </div>
+                                <!-- End Counter Item -->
+                                
+                            </div>
+                        </div>                   
+                    
+                </section>
+                <!-- End Some Facts Section -->
+                
+                <!-- Team Section -->
+                <section style="background-image: url(images/full-width-images/section-bg-2.jpg);" class="page-section dark-bg image-color-bg team-section" id="team">
+                    <div class="bg-overlay-2"></div>
+                    <div class="container bg-content">
+                        
+                        <div class="row">
+                            <div class="col-md-8 col-md-offset-2 col-lg-8 col-lg-offset-2">
+                                
+                                <h2 class="section-title margin-top-null">
+                                    Team
+                                </h2>
+                                
+                                <h3 class="section-heading">The People Behind the Urban Garden Dreams Podcast</h3>
+                                
+                                <p class="section-text">
+                                     Let's get to know each other. The Urban Garden Dreams Podcast is your one stop shop for all things plants. From simple tips and tricks to full in-depth guides, we have you covered when it comes to house plants!
+                                </p>
+                                
+                            </div>
+                        </div>
+                        
+                        <div class="team-grid">
+                            
+                            <!-- Liam Sawyer Team -Item -->
+                            <div class="team-item-wrap">
+                                <div class="team-item js-clickable go-fade-in" tabindex="0" role="button">
+                                    <!-- Photo, Name and Status -->
+                                    <div class="team-photo"><img src="images/team/Liam.jpg" width="150" height="150" alt="Photo of Liam Sawyer" /></div>
+                                    <div class="team-name">Liam Sawyer</div>
+                                    <div class="team-status">Owner/Producer</div>
+                                </div>                            
+                                <div class="team-cv">
+                                    <div class="team-description">
+                                        <p>
+                                            Liam Sawyer is a published author, hobbyist photographer, and loves to create new things such as graphic art, apps, and new clothing designs. He founded Sawyer Original in 2020 right after he published his first book Wishes of Love. 
+                                        </p>
+                                        <p>
+                                            He currently attends Manhattan College for a B.S. in Computer Engineering with a Minor in Mathematics. Being the sole founder of Sawyer Original, he is constantly trying to improve the user experience for everyone who decides to visit.  
+                                        </p>
+                                    </div>
+                                    <address class="team-contacts">
+                                        <strong>Get in Touch</strong>
+                                        <br/>
+                                        <a href="mailto:liam@urbangardendreams">liam@urbangardendreams</a>
+                                        <br/>
+                                        <abbr title="Phone">
+                                            P:
+                                        </abbr>
+                                        (347) 466-3426
+                                    </address>
+                                    <div class="team-social-links">
+                                        <a href="#" title="Facebook" aria-label="Facebook"><i class="fa fa-facebook"></i></a>
+                                        <a href="#" title="Twitter" aria-label="Twitter"><i class="fa fa-twitter"></i></a>
+                                        <a href="#" title="LinkedIn" aria-label="LinkedIn"><i class="fa fa-linkedin"></i></a>
+                                        <a href="#" title="Instagram" aria-label="Instagram"><i class="fa fa-instagram"></i></a>
+                                        <a href="#" title="Snapchat" aria-label="Snapchatl"><i class="fa fa-snapchat"></i></a>
+                                    </div>
+                                </div> 
+                            </div>                           
+                            <!-- End Team Item -->
+
+                            <!-- Guest Team -Item -->          
+                            <!-- End Team Item -->
+                            
+                            
+                        </div>
+                        
+                        <!-- Container for opened team item  -->
+                        <div class="team-opened-wrap" id="team-opened-wrap" ></div>                    
+                    </div>
+                </section>
+                <!-- Team Section -->
+                
+                <!-- Podcast Hosts Section -->
+                <section class="page-section" id="ListenNow">
+                    <div class="container">
+                        <div class="row">
+                            <div class="col-md-8 col-md-offset-2 col-lg-8 col-lg-offset-2">
+                                
+                                <h2 class="section-title margin-top-null">
+                                    Listen Now
+                                </h2>
+                                
+                                <h3 class="section-heading">Urban Garden Dreams is available on a variety of platforms!</h3>
+                                
+                            </div>
+                        </div>
+                        
+                        <!-- Service Grid -->
+                        <div class="service-grid">
+                            
+                            <!-- Service row -->
+                            <div class="row">
+                                
+                                <!-- Service Item -->
+                                <div class="col-sm-6 col-md-3 col-lg-3 go-fade-in">
+                                    <div class="service-item">
+                                        <div class="service-item-inner">
+                                            <div class="service-wrap">
+                                                
+                                                <!-- Service Icon (Simple-line-icons) -->
+                                                <div class="service-icon">
+                                                    <i class="fa-solid fa-podcast"></i>
+                                                </div>
+                                                
+                                                <!-- Service Title -->
+                                                <div class="service-title" role="button" tabindex="0">
+                                                    Apple Podcasts
+                                                </div>
+                                                <div class="service-full">
+                                                    <ul class="sf-list">
+                                                        <li>Member Only Episodes</li>
+                                                        <li> <a href="https://podcasts.apple.com/us/podcast/life-in-focus/id1564144298"> <p>Listen Today</p> </a>  </li> 
+                                                    </ul>
+                                                    <div class="sf-description">
+                                                        &copy; Sawyer Original 2022 
+                                                    </div>                                                 
+                                                </div>
+                                                <div class="service-more">
+                                                    <span class="icon-plus sm-icon"></span>
+                                                    <span class="sm-more" aria-hidden="true">More</span>
+                                                </div>                                            
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <!-- End Service Item -->
+                                
+                                <!-- Service Item -->
+                                <div class="col-sm-6 col-md-3 col-lg-3 go-fade-in">
+                                    <div class="service-item">
+                                        <div class="service-item-inner">
+                                            <div class="service-wrap">
+                                                
+                                                <!-- Service Icon (Simple-line-icons) -->
+                                                <div class="service-icon">
+                                                    <i class="fa-brands fa-spotify"></i>
+                                                </div>
+                                                
+                                                <!-- Service Title -->
+                                                <div class="service-title" role="button" tabindex="0">
+                                                    Spotify Podcast
+                                                </div>
+                                                
+                                                <!-- Full Service Description -->
+                                                <div class="service-full">
+                                                    <ul class="sf-list">
+                                                        <li>Listen Anytime, Anywhere</li>
+                                                        <li> <a href="https://open.spotify.com/show/5gkU8VX2ACZ4cHDrOyxF4M"> <p>Listen Today</p> </a>  </li> 
+                                                    </ul>
+                                                    <div class="sf-description">
+                                                        &copy; Sawyer Original 2022
+                                                    </div>                                                 
+                                                </div>
+                                                
+                                                <div class="service-more">
+                                                    <span class="icon-plus sm-icon"></span>
+                                                    <span class="sm-more" aria-hidden="true">More</span>
+                                                </div>
+                                                
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <!-- End Service Item -->
+                                
+                                
+                                <!-- Service Item -->
+                                <div class="col-sm-6 col-md-3 col-lg-3 go-fade-in">
+                                    <div class="service-item">
+                                        <div class="service-item-inner">
+                                            <div class="service-wrap">
+                                                
+                                                <!-- Service Icon (Simple-line-icons) -->
+                                                <div class="service-icon">
+                                                    <i class="fa-brands fa-amazon"></i>
+                                                </div>
+                                                
+                                                <!-- Service Title -->
+                                                <div class="service-title" role="button" tabindex="0">
+                                                    Amazon Music
+                                                </div>
+                                                
+                                                <!-- Full Service Description -->
+                                                <div class="service-full">
+                                                    <ul class="sf-list">
+                                                        <li>Included With Amazon Prime</li>
+                                                        <li> <a href="https://music.amazon.com/podcasts/4765fb97-969f-47e4-b299-4a7f21751d68/life-in-focus"> <p>Listen Today</p> </a>  </li> 
+                                                    </ul>
+                                                    <div class="sf-description">
+                                                        &copy; Sawyer Original 2022
+                                                    </div>                                                
+                                                </div>
+                                                
+                                                <div class="service-more">
+                                                    <span class="icon-plus sm-icon"></span>
+                                                    <span class="sm-more" aria-hidden="true">More</span>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <!-- End Service Item -->
+                                
+                                <!-- Service Item -->
+                                <div class="col-sm-6 col-md-3 col-lg-3 go-fade-in">
+                                    <div class="service-item">
+                                        <div class="service-item-inner">
+                                            <div class="service-wrap">
+                                                
+                                                <!-- Service Icon (Simple-line-icons) -->
+                                                <div class="service-icon">
+                                                    <i class="fa-brands fa-google"></i>
+                                                </div>
+                                                
+                                                <!-- Service Title -->
+                                                <div class="service-title" role="button" tabindex="0">
+                                                    Google Podcast
+                                                </div>
+                                                
+                                                <!-- Full Service Description -->
+                                                <div class="service-full">
+                                                    <ul class="sf-list">
+                                                        <li>RSS Made Easy</li>
+                                                        <li> <a href="https://podcasts.google.com/feed/aHR0cHM6Ly93d3cuc2F3eWVybGlhbS5jb20vbGlmZS1pbi1mb2N1cz9mb3JtYXQ9cnNz"> <p>Listen Today</p> </a>  </li> 
+                                                    </ul>
+                                                    <div class="sf-description">
+                                                        &copy; Sawyer Original 2022
+                                                    </div>                                                  
+                                                </div>
+                                                
+                                                <div class="service-more">
+                                                    <span class="icon-plus sm-icon"></span>
+                                                    <span class="sm-more" aria-hidden="true">More</span>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <!-- End Service Item -->
+                                
+                            </div>
+                            <!-- End Service row -->
+                            
+                        </div>
+                        <!-- End Service Grid -->
+                        
+                        <div class="row">
+                            <div class="col-md-8 col-md-offset-2 col-lg-8 col-lg-offset-2">
+                                
+                                <p class="section-text margin-bot-null">
+                                    Urban Garden Dreams focuses on house plants and how to take care of them. We make it easy to understand what is right for you. From potting guides to the amount of light needed for the plant, we have you covered.
+                                </p>
+                                
+                            </div>
+                        </div>
+                        
+                    </div>
+                </section>
+                <!-- End Services Section -->
+                
+                <!-- Call Action Block -->
+                <section style="background-image: url(images/full-width-images/section-bg-1.jpg);" class="small-section dark-bg image-bg">
+                    <div class="bg-overlay-2">
+                    </div>
+                    <div class="container bg-content">
+                        <div class="row">
+                            <div class="col-md-8 col-lg-6 col-lg-offset-2 banner-text">
+                                <!-- Text -->
+                                <h3 class="banner-heading">Want to Collaborate?</h3>
+                                <p class="banner-decription margin-bot-null">
+                                    Let's talk and see if our visions align.
+                                </p>
+                            </div>
+                            <div class="col-md-4 col-lg-2 banner-button">
+                                <!-- Button -->
+                                <a href="#contacts" class="btn btn-spacia btn-w btn-large">Let’s Talk!</a>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+                <!-- End Call Action Block -->
+                
+                <!-- Portfolio Section -->
+                <section class="page-section padding-bot-null" id="Episodes">
+                    <div class="container">
+                        <div class="row">
+                            <div class="col-md-8 col-md-offset-2 col-lg-8 col-lg-offset-2">
+                                
+                                <h2 class="section-title margin-top-null">
+                                    Podcast Episodes
+                                </h2>
+                                
+                                <h3 class="section-heading">Catch Up on the Latest Episodes of Urban Garden Dreams</h3>
+                                
+                                <p class="section-text">
+                                    Episodes of Season 01 are underway to listen and to read. Enjoy!
+                                </p>
+                                
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <!-- Works Filter -->
+                    <div class="container align-center">    
+                        <h4 class="works-filter-title sr-only">Podcast Epiosde filter by:</h4>                    
+                        <div class="works-filter animate" role="group">                            
+                            <button class="filter" data-filter="all" aria-pressed="true">All Episodes</button>
+                            <button class="filter" data-filter="Basics">Back to the Basics</button>
+                            <button class="filter" data-filter="PetFriendly">Pet Friendly</button>
+                            <button class="filter" data-filter="Monstera">Monstera</button>
+                            <button class="filter" data-filter="Trailer">Trailer</button>
+                        </div>
+                    </div>
+                    <!-- End Works Filter -->
+                    
+                    <!-- Works Grid -->                    
+                    <ul class="works-grid clearfix" id="work-grid" aria-live="polite">
+                        
+                        <!-- Work Item -->
+                        <li class="work-item mix Monstera">
+                            <a href="episodes/s01ep01.html" class="work-item-link">
+                                <div class="work-img">
+                                    <img src="images/portfolio/Season01/EP01Long.png" alt="Work" />
+                                </div>
+                                <div class="work-intro">
+                                    <h4 class="work-title">The Art of the Monstera</h4>
+                                    <div class="work-descr">
+                                        Monstera
+                                    </div>
+                                </div>
+                            </a>
+                        </li>
+                        <!-- End Work Item -->
+                        
+                        <!-- Work Item -->
+                        <li class="work-item mix Trailer">
+                            <a href="episodes/trailer.html" class="work-item-link">
+                                <div class="work-img">
+                                    <img class="work-img" src="images/portfolio/TrailerLong.png" alt="Work" />
+                                </div>
+                                <div class="work-intro">
+                                    <h4 class="work-title">Urban Garden Dreams Trailer</h4>
+                                    <div class="work-descr">
+                                        Trailer
+                                    </div>
+                                </div>
+                            </a>
+                        </li>
+                        <!-- End Work Item -->
+                        
+                        
+                        
+                        
+                    </ul>                
+                    <!-- End Works Grid -->                
+                    
+                </section>
+                <!-- End Portfolio Section -->
+                
+                <!-- Benefits (features) Section -->
+                <section class="page-section" id="quality">
+                    <div class="container">
+                        <div class="row">
+                            <div class="col-md-8 col-md-offset-2 col-lg-8 col-lg-offset-2">
+                                
+                                <h2 class="section-title margin-top-null">
+                                    Quality
+                                </h2>
+                                
+                                <h3 class="section-heading">Reasons to subscribe and listen.</h3>
+                                
+                                
+                                
+                            </div>
+                        </div>
+                        
+                        <!-- Benefits Grid -->
+                        <div class="benefits-grid">
+                            
+                            <!-- Benefit Item -->
+                            <div class="benefits-item go-fade-in">
+                                <div class="benefits-icon">
+                                    <span class="icon-trophy"></span>
+                                </div>
+                                <h4 class="benefits-title">
+                                    High quality
+                                </h4>
+                                <div class="benefits-descr">
+                                    All audio is recorded on Studio Microphones for crisp sounds.
+                                </div>
+                            </div>
+                            <!-- End Benefit Item -->
+                            
+                            <!-- Benefit Item -->
+                            <div class="benefits-item go-fade-in">
+                                <div class="benefits-icon">
+                                    <span class="icon-clock"></span>
+                                </div>
+                                <h4 class="benefits-title">
+                                    Release Dates
+                                </h4>
+                                <div class="benefits-descr">
+                                    Podcasts are released on a set schedule with little to no interruptions.
+                                </div>
+                            </div>
+                            <!-- End Benefit Item -->
+                            
+                            <!-- Benefit Item -->
+                            <div class="benefits-item go-fade-in">
+                                <div class="benefits-icon">
+                                    <span class="icon-bubbles"></span>
+                                </div>
+                                <h4 class="benefits-title">
+                                    Transcripts
+                                </h4>
+                                <div class="benefits-descr">
+                                    With every episode, there is a transcript of everything that was said.  
+                                </div>
+                            </div>
+                            <!-- End Benefit Item -->
+                            
+                            <!-- Benefit Item -->
+                            <div class="benefits-item go-fade-in">
+                                <div class="benefits-icon">
+                                    <span class="icon-support"></span>
+                                </div>
+                                <h4 class="benefits-title">
+                                    Friendly support
+                                </h4>
+                                <div class="benefits-descr">
+                                    We are here to help with any issues or questions about Urban Garden Dreams.
+                                </div>
+                            </div>
+                            <!-- End Benefit Item -->
+                            
+                        </div>
+                        <!-- End Benefits Grid -->
+                        
+                    </div>
+                </section>
+                <!-- End Benefits (features) Section -->
+                
+                <!-- Call Action Block -->
+                <section style="background-image: url(images/full-width-images/section-bg-3.jpg);" class="small-section dark-bg image-color-bg">
+                    <div class="bg-overlay-1"></div>
+                    <div class="container bg-content">
+                        <div class="row">
+                            <div class="col-md-8 col-lg-6 col-lg-offset-2 banner-text">
+                                
+                                <!-- Text -->
+                                <h3 class="banner-heading">New Episode Ideas?</h3>                            
+                                <p class="banner-decription margin-bot-null">
+                                    We are always open to interesting ideas.
+                                </p>
+                                
+                            </div>
+                            <div class="col-md-4 col-lg-2 banner-button">
+                                
+                                <!-- Button -->
+                                <a href="#contacts" class="btn btn-spacia btn-w-color btn-large">Contact Us</a>
+                            
+                            </div>
+                        </div>
+                    </div>
+                </section>
+                <!-- End Call Action Block -->
+                
+                <!-- Pricing Section -->
+                <section class="page-section" id="pricing">
+                    <div class="container">
+                        <div class="row">
+                            <div class="col-md-8 col-md-offset-2 col-lg-8 col-lg-offset-2">
+                                
+                                <h2 class="section-title margin-top-null">
+                                   FAQ
+                                </h2>
+                                
+                                <h3 class="section-heading">Frequently Asked Questions</h3>
+                                
+                                <p class="section-text">
+                                    Urban Garden Dreams is transparent about everything that is done, from the recording equipment to where we are published. Below are some popular questions we are asked.
+                                </p>
+                                
+                            </div>
+                        </div>
+                        
+                        <div class="row">
+                            <div class="col-sm-8 col-sm-offset-2 align-left">
+                                
+                                <!-- Toggle -->
+                                <dl class="toggle">
+                                    <dt>
+                                        <a href="">What recording equipment do you use?</a>
+                                    </dt>
+                                    <dd>
+                                        <u>Microphone:</u> Yeti USB Microphone <br>
+                                        <u>Boom Arm:</u> Compass Premium Microphone Boom Arm <br>
+                                        <u>Shockmount:</u> Radius III Custom Shockmount For Yeti <br>
+                                        <u>Computer:</u> 16" MacBook Pro with Touchbar<br>
+                                        <u>Accessories:</u> Mini USB to Type C Cable
+                                    </dd>
+                                    <dt>
+                                        <a href="">How do you edit the podcast audio?</a>
+                                    </dt>
+                                    <dd>
+                                        We edit the podcast audio using Logic Pro and Audacity on the MacBook Pro.
+                                    </dd>
+                                    <dt>
+                                        <a href="">Are there exlusive episodes?</a>
+                                    </dt>
+                                    <dd>
+                                        There will be exclusive longer episodes for subscribers on Apple Podcasts.
+                                    </dd>
+                                </dl>
+                                <!-- End Toggle -->
+                                
+                            </div>
+                        </div>            
+                        
+                    </div>
+                </section>
+                <!-- End Section -->
+                
+                
+                <hr class="margin-top-null margin-bot-null" />
+                
+                
+                <!-- Availability Section -->
+                <section class="page-section padding-bot-null" id="Availability">
+                    <div class="container">
+                        <div class="row">
+                            <div class="col-md-8 col-md-offset-2 col-lg-8 col-lg-offset-2">
+                                
+                                <h2 class="section-title margin-top-null">
+                                    Availability
+                                </h2>
+                                
+                                <h3 class="section-heading">Urban Garden Dreams is available on all major streaming channels</h3>
+                                
+                                <p class="section-text">
+                                    Listen whenever and whenever you are. Urban Garden Dreams makes sure each streaming channel is updated with the lastest episodes. 
+                                </p>                        
+                                
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <!-- Clients Logos -->
+                    <div class="clients-logos">
+                        
+                        <!-- Copy logos row if you need more logos -->
+                        <div class="clients-logos-row">
+                            <a href="https://podcasts.apple.com/us/podcast/life-in-focus/id1564144298" class="client-item"><img src="images/clients-logos/apple.svg" alt="Apple Podcasts" /></a>
+                            <a href="https://open.spotify.com/show/5gkU8VX2ACZ4cHDrOyxF4M" class="client-item"><img src="images/clients-logos/spotify.svg" alt="Spotify Podcast" /></a>
+                            <a href="https://music.amazon.com/podcasts/4765fb97-969f-47e4-b299-4a7f21751d68/life-in-focus" class="client-item"><img src="images/clients-logos/amazon.svg" alt="Amazon Music" /></a>
+                            <a href="https://podcasts.google.com/feed/aHR0cHM6Ly93d3cuc2F3eWVybGlhbS5jb20vbGlmZS1pbi1mb2N1cz9mb3JtYXQ9cnNz" class="client-item"><img src="images/clients-logos/google.svg" alt="Google Podcast" /></a>
+                            <a href="https://pca.st/wxq2i4av" class="client-item"><img src="images/clients-logos/pocketcast.svg" alt="Pocket Casts" /></a>
+                            <a href="https://castbox.fm/channel/Life-in-Focus-id4644560?utm_source=website&utm_medium=dlink&utm_campaign=web_share&utm_content=Life%20in%20Focus-CastBox_FM" class="client-item"><img src="images/clients-logos/castbox.svg" alt="CastBox" /></a>
+                        </div>
+                        
+                    </div>
+                    <!-- End Clients Logos -->
+                    
+                    <!-- Reviews -->
+                    <div class="small-section gray-bg">
+                        <div class="container">
+                            <div class="row">
+                                <div class="col-md-8 col-md-offset-2 col-lg-8 col-lg-offset-2">
+                                    
+                                    <h2 class="sr-only">Listner Reviews</h2>
+                                    
+                                    <div class="text-carousel">
+                                        <div class="tc-icon">
+                                            <i class="fa fa-quote-left"></i>
+                                        </div>
+                                        <!-- Arrows -->
+                                        <div class="tc-arrows animate" id="tc-controls-2">
+                                            <div class="tc-arrow-left"></div>
+                                            <div class="tc-arrow-right"></div>
+                                        </div>
+                                        <div class="tc-content">
+                                            <!-- Review -->
+                                            <ul class="tc-slider clients-slider" aria-roledescription="carousel">
+                                                <li aria-roledescription="slide">
+                                                    <blockquote class="client-review">
+                                                        So brave for speaking their truth with regard to the stigma surrounding mental health.
+                                                    </blockquote>                                                
+                                                    
+                                                    <!-- Author -->
+                                                    <div class="tc-author">
+                                                        June Sawyer
+                                                    </div>
+                                                </li>
+                                                
+                                                <li aria-roledescription="slide">
+                                                    <blockquote class="client-review">
+                                                        Love this podcast! Honestly life changing!! <br> Thank you for this!!
+                                                    </blockquote>                                                
+                                                    
+                                                    <!-- Author -->
+                                                    <div class="tc-author">
+                                                        Maham Altaf
+                                                    </div>
+                                                </li>
+                                                
+                                                <li aria-roledescription="slide">
+                                                    <blockquote class="client-review">
+                                                        You're definitely helping so many people!
+                                                    </blockquote>                                                
+                                                    
+                                                    <!-- Author -->
+                                                    <div class="tc-author">
+                                                        Brianna Ronchick
+                                                    </div>
+                                                </li>
+                                            </ul>
+                                        </div>                                    
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Reviews -->
+                    
+                </section>
+                <!-- Availability Section -->
+                
+                <!-- Contacts Section -->
+                <section class="page-section contacts" id="contacts">
+                    <div class="container margin-bot">
+                        <div class="row">
+                            <div class="col-md-8 col-md-offset-2 col-lg-8 col-lg-offset-2">
+                                
+                                <h2 class="section-title margin-top-null">
+                                    Contacts
+                                </h2>
+                                
+                                <h3 class="section-heading">We’re always open to talk to good people</h3>
+                                
+                                <p class="section-text">
+                                    Call or email us for any questions or concerns. You can even fill out the contact form below and we will get back to as soon as possible.  
+                                </p>
+                                
+                            </div>
+                        </div>
+                        
+                        <div class="row">
+                            <div class="col-md-10 col-md-offset-1 col-lg-10 col-lg-offset-1">
+                                
+                                
+                                
+                                <div class="row">
+                                    
+                                    <!-- Phone Block -->
+                                    <div class="col-sm-4 col-md-4 col-lg-4 contact-block go-fade-in">
+                                        
+                                        <h4 class="sr-only">Our Phone</h4>
+                                        
+                                        <div class="contact-icon">
+                                            <!-- Enter your e-mail here -->
+                                            <a href="tel:+1347-466-3426"><i class="fa fa-phone"></i></a>
+                                        </div>
+                                        
+                                        <div class="contact-text">
+                                            <!-- Enter your e-mail here -->
+                                            <a href="tel:+1347-466-3426">+1347-466-3426</a>
+                                        </div>
+                                        
+                                    </div>
+                                    
+                                    <!-- Email Block -->
+                                    <div class="col-sm-4 col-md-4 col-lg-4 contact-block go-fade-in">
+                                        
+                                        <h4 class="sr-only">Our E-mail</h4>
+                                        
+                                        <div class="contact-icon">
+                                            <!-- Enter your e-mail here -->
+                                            <a href="mailto:liam@urbangardendreams"><i class="fa fa-envelope"></i></a>
+                                        </div>
+                                        
+                                        <div class="contact-text">
+                                            <!-- Enter your e-mail here -->
+                                            <a href="mailto:liam@urbangardendreams">liam@urbangardendreams</a>
+                                        </div>
+                                        
+                                    </div>
+
+                                    <!-- Address Block -->
+                                    <div class="col-sm-4 col-md-4 col-lg-4 contact-block go-fade-in">
+                                        
+                                        <h4 class="sr-only">Based From</h4>
+                                        
+                                        <div class="contact-icon">
+                                            <i class="fa fa-map-marker"></i>
+                                        </div>
+                                        
+                                        <div class="contact-text">
+                                            <!-- Enter your address here -->
+                                            Staten Island, New York, United States of America
+                                        </div>
+                                        
+                                    </div>
+                                    
+                                </div>
+                                
+                            </div>
+                        </div>
+                    </div>
+                    
+                    
+                    
+                    <!-- White Overspace on Map -->
+                    <div class="container">
+                        <div class="row">
+                            <div class="col-md-8 col-md-offset-2 col-lg-8 col-lg-offset-2">
+                                <div class="contact-overspace"></div>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- End White Overspace on Map -->
+                    
+                    <!-- Contacts Form Container -->
+                    <div class="container map-fix">
+                        <div class="row">
+                            <div class="col-md-8 col-md-offset-2 col-lg-8 col-lg-offset-2">
+                                <div class="contact-form-wrap align-left">
+                                                                    
+                                    <!-- Form -->
+                                    <form method="post" action="contact.php" id="form" class="form contact-form go-fade-in">
+                                        
+                                        <!-- Form Heading -->
+                                        <h3 class="sr-only">Contact form</h3>
+                                        <h4 class="small-section-heading margin-top-null align-center">Do you have any questions? Let’s talk!</h4>
+                                        
+                                        <!-- Name -->
+                                        <div class="form-group">
+                                            <label for="name" class="sr-only">Name</label>
+                                            <input type="text" name="name" id="name" class="form-control" placeholder="Name" pattern=".{3,100}" required aria-required="true">
+                                        </div>
+                                        
+                                        <!-- Email -->
+                                        <div class="form-group">
+                                            <label for="email" class="sr-only">E-mail</label>
+                                            <input type="email" name="email" id="email" class="form-control" placeholder="Email" pattern=".{5,100}" required aria-required="true">
+                                        </div>
+                                        
+                                        <!-- Message -->
+                                        <div class="form-group">
+                                            <label for="text" class="sr-only">Message</label>
+                                            <textarea name="text" id="text" class="form-control" rows="6" placeholder="Message"></textarea>
+                                        </div>
+                                        
+                                        <!-- Number -->
+                                        <div class="form-group">
+                                            <input type="hidden" name="number" id="number" class="form-control">
+                                        </div> 
+                                        
+                                        <!-- Send Button -->                                 
+                                        <button type="submit" class="btn btn-spacia btn-large btn-full" aria-controls="form-success">
+                                            Send
+                                        </button>
+                                        
+                                    </form>
+                                    <!-- End Form -->
+                                    
+                                    <!-- Success Message -->
+                                    <div class="form-success" id="form-success" role="region" aria-live="polite" aria-atomic="true"></div>
+                                    
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- End Contacts Form Container -->
+                    
+                </section>
+                <!-- End Contacts Section -->
+            
+            </main>
+            
+            <!-- Foter -->
+            <footer class="footer" role="contentinfo">
+                <div class="full-wrapper">
+                    
+                    <!-- Footer Text -->
+                    <div class="footer-text">
+                        Thanks for your visit!
+                        <br/>
+                        <h2 class="footer-text">Find us in the social media:</h2>
+                    </div>
+                    <!-- End Footer Text -->
+                    
+                    <!-- Social Links -->
+                    <div class="footer-social-links">
+                        <div class="social-links">
+                            <a href="https://www.facebook.com/LifeInFocusPodcast" title="Facebook"><i class="fa fa-facebook"></i><span class="sr-only">Facebook</span></a>
+                            <a href="https://instagram.com/lifeinfocuspod?utm_medium=copy_link" title="Instagram"><i class="fa fa-instagram"></i><span class="sr-only">Instagram</span></a>
+                            <a href="https://vm.tiktok.com/ZTdan2K14/" title="TikTok"><i class="fa-brands fa-tiktok"></i><span class="sr-only">Tiktok</span></a>
+                            <a href="mailto:liam@urbangardendreams" title="E-mail"><i class="fa fa-envelope"></i><span class="sr-only">E-mail</span></a>
+                            
+                        </div>
+                    </div>
+                    <!-- End Social Links -->
+                    
+                    <!-- Copyright -->
+                    <div class="footer-copy">
+                        © Sawyer Original 2022. Made for Urban Garden Dreams.
+                    </div>
+                    <!-- End Copyright -->
+                    
+                </div>
+            </footer>
+            <!-- End Foter -->
+            
+        </div>
+        <!-- End Page Wrap -->
+        
+
+        
+        <!-- JS -->
+        <script src="js/jquery-1.9.1.min.js"></script>
+        <script src="js/jquery-migrate-1.2.1.min.js"></script>
+        <script src="js/jquery.easing.1.3.js"></script>
+        <script src="js/bootstrap.min.js"></script>
+        <script src="js/jquery.smooth-scroll.js"></script>
+        <script src="js/jquery.scrollTo.min.js"></script>
+        <script src="js/jquery.localScroll.min.js"></script>
+        <script src="js/jquery.viewport.mini.js"></script>
+        <script src="js/jquery.countTo.js"></script>
+        <script src="js/jquery.appear.js"></script>
+        <script src="js/jquery.fittext.js"></script>
+        <script src="js/jquery.fitvids.js"></script>
+        <script src="js/jquery.sticky.js"></script>
+        <script src="js/jquery.parallax-1.1.3.js"></script>
+        <script src="js/jquery.bxslider.min.js"></script>
+        <script src="js/jquery.mixitup.min.js"></script>
+        <script src="js/all.js"></script>
+        <!--[if lt IE 10]><script src="js/placeholder.js"></script><![endif]-->
+    </body>
+</html>

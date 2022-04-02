@@ -1,0 +1,431 @@
+html, body {
+    width: 100%;
+    height: 100%;
+    background-image:#75bcff;background-image:  
+radial-gradient(at 40% 37%, hsla(0,0%,100%,1) 0, transparent 46%),  
+radial-gradient(at 86% 86%, hsla(207,94%,67%,1) 0, transparent 47%),  
+radial-gradient(at 28% 5%, hsla(203,100%,60%,1) 0, transparent 57%),  
+radial-gradient(at 34% 41%, hsla(196,92%,64%,1) 0, transparent 40%),  
+radial-gradient(at 31% 66%, hsla(21,100%,98%,1) 0, transparent 43%),  
+radial-gradient(at 13% 67%, hsla(240,100%,99%,1) 0, transparent 40%),  
+radial-gradient(at 60% 29%, hsla(176,100%,95%,1) 0, transparent 51%);
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-repeat: no-repeat;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    border: none;
+    outline: none;
+}
+/* 
+#content_container {
+    width: auto;
+    height: auto;
+    padding-left: 30px;
+    padding-right: 30px;
+}
+
+#form_container {
+    width: 100%;
+    height: 100%;
+
+    background: rgba( 255, 255, 255, 0.15 );
+    box-shadow: 0 8px 32px 0 rgba(31, 102, 135, 0.356);
+    backdrop-filter: blur( 5px );
+    -webkit-backdrop-filter: blur( 5px );
+    border-radius: 10px;
+    
+
+    overflow: hidden;
+}
+
+#form_header_container {
+    width: 100%;
+    height: 5%;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    float: left;
+
+    padding: 20px;
+    padding-bottom: 30px;
+    padding-top: 30px;
+
+    border-bottom: 0px solid transparent;
+    border-image: -webkit-linear-gradient(25deg, #f1f0ec, #d0d6da, #a6d1e2, #80a9f7, #3964aa) 20;
+    background: rgba(0, 0, 0, 0.623);
+}
+
+#form_header {
+    display: inline-block;
+    font-size: 15px;
+    font-family: Bowlby One SC;
+    font-weight: 900;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+
+
+    background: rgb(255, 255, 255);
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+}
+
+#form_content_container {
+    width: 100%;
+    height: 90%;
+
+    float: left;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    padding-top: 30px;
+}
+
+#form_content_inner_container {
+    width: 75%;
+    height: 100%;
+
+    float: left;
+
+}
+
+::placeholder {
+
+    color: rgba(0, 0, 0, 0.623);
+}
+
+input {
+    width: 100%;
+    height: 40px;
+
+    padding-left: 10px;
+    margin-bottom: 20px;
+
+    background: rgba(0, 0, 0, 0.027);
+    font-family: Montserrat;
+    font-weight: 500;
+    color: rgb(65, 65, 65);
+    font-size: 12px;
+
+    border-bottom: 2px solid transparent;
+    border-top-left-radius: 2%;
+    border-top-right-radius: 2%;
+}
+
+
+#login_info_container {
+    width: 100%;
+    height: 10%;
+
+    background-color: rgba(0, 0, 0, 0.027);
+    color: rgba(0, 0, 0, 0.623);
+
+    float: left;
+
+    margin-top: 30px;
+    margin-bottom: 30px
+    
+}
+
+#login_info_container h2 {
+    width: 100%;
+    height: 100%;
+    float: left;
+    padding: 15px;
+
+    background: transparent;
+    color: inherit;
+
+    font-family: Montserrat;
+    letter-spacing: 1px;
+    font-weight: 400;
+    font-size: 10px;
+
+    cursor: pointer;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+#button_container {
+    width: 100%;
+    height: 40px;
+
+    background-color: rgba(0, 0, 0, 0.027);
+    color: rgba(0, 0, 0, 0.623);
+
+    float: left;
+
+    margin-top: 5px;
+    
+}
+
+#button_container button {
+    width: 50%;
+    height: 100%;
+    float: left;
+
+    background: transparent;
+    color: inherit;
+
+    font-family: Montserrat;
+    letter-spacing: 1px;
+    font-weight: 700;
+    font-size: 12px;
+
+    cursor: pointer;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+} */
+
+/* Register Page CSS Start */
+
+.main-div button, .loggedin-div button {
+    background: #5d8ffc;
+    color: #fff;
+    border: 1px solid #5d8ffc;
+    border-radius: 5px;
+    padding: 15px;
+    width: 100%;
+    transition: 0.3s;
+    -webkit-transition: 0.3s;
+    -moz-transition: 0.3s;
+  }
+  
+  .main-div button:hover, .loggedin-div button:hover {
+    background: #fff;
+    color: #5d8ffc;
+    border: 1px solid #5d8ffc;
+    cursor: pointer;
+  }
+
+.form_header {
+    font-size: 15px;
+    font-family: Bowlby One SC;
+    font-weight: 900;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    color: #000;
+    text-align: center;
+    background: rgb(0 0 0);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    display: flex;
+    justify-content: center;
+}
+.background{
+    width: 430px;
+    height: 520px;
+    position: absolute;
+    transform: translate(-50%,-50%);
+    left: 50%;
+    top: 50%;
+}
+.background .shape{
+    height: 200px;
+    width: 200px;
+    position: absolute;
+    border-radius: 50%;
+}
+.shape:first-child{
+    background: linear-gradient(
+        #1845ad,
+        #23a2f6
+    );
+    left: -80px;
+    top: -80px;
+}
+.shape:last-child{
+    background: linear-gradient(
+        to right,
+        #ff512f,
+        #f09819
+    );
+    right: -30px;
+    bottom: -80px;
+}
+form{
+    height: 520px;
+    width: 400px;
+    background-color: rgba(255,255,255,0.13);
+    position: absolute;
+    transform: translate(-50%,-50%);
+    top: 50%;
+    left: 50%;
+    border-radius: 10px;
+    backdrop-filter: blur(10px);
+    border: 2px solid rgba(255,255,255,0.1);
+    box-shadow: 0 0 40px rgba(8,7,16,0.6);
+    padding: 50px 35px;
+}
+form *{
+    font-family: 'Poppins',sans-serif;
+    color: #000;
+    letter-spacing: 0.5px;
+    outline: none;
+    border: none;
+}
+
+.signinops{
+    height: 520px;
+    width: auto;
+    background-color: rgba(255,255,255,0.13);
+    position: absolute;
+    transform: translate(-50%,-50%);
+    top: 50%;
+    left: 50%;
+    border-radius: 10px;
+    backdrop-filter: blur(10px);
+    border: 2px solid rgba(255,255,255,0.1);
+    box-shadow: 0 0 40px rgba(8,7,16,0.6);
+    padding: 50px 35px;
+}
+.signinops *{
+    font-family: 'Poppins',sans-serif;
+    color: #000;
+    letter-spacing: 0.5px;
+    outline: none;
+    border: none;
+}
+
+
+form h3{
+    font-size: 32px;
+    font-weight: 500;
+    line-height: 42px;
+    text-align: center;
+}
+
+label{
+    display: block;
+    margin-top: 30px;
+    font-size: 16px;
+    font-weight: 500;
+}
+input{
+    display: block;
+    height: 50px;
+    width: 100%;
+    background-color: rgba(255,255,255,0.07);
+    border-radius: 3px;
+    padding: 0 10px;
+    margin-top: 8px;
+    font-size: 14px;
+    font-weight: 300;
+    border: 1px solid #000;
+}
+::placeholder{
+    color: #000;
+}
+button{
+    margin-top: 50px;
+    width: 100%;
+    background-color: #ffffff;
+    color: #080710;
+    padding: 15px 0;
+    font-size: 18px;
+    font-weight: 600;
+    border-radius: 5px;
+    cursor: pointer;
+    box-shadow: 0px 8px 15px rgb(0 0 0 / 50%);
+}
+.social{
+  margin-top: 30px;
+  display: flex;
+}
+.social div{
+  background: red;
+  width: 150px;
+  border-radius: 3px;
+  padding: 5px 10px 10px 5px;
+  background-color: rgba(255,255,255,0.27);
+  color: #000;
+  text-align: center;
+}
+.social div:hover{
+  background-color: rgba(255,255,255,0.47);
+}
+.social .fb{
+  margin-left: 25px;
+}
+.social i{
+  margin-right: 4px;
+}
+button:last-child {
+    margin-top: 20px;
+}
+@media (max-width:550px){
+    .shape:last-child {
+        background: linear-gradient( to right, #ff512f, #f09819 );
+        right: 0;
+        bottom: -52px;
+    }
+}
+@media (max-width:400px){
+.shape:last-child {
+    background: linear-gradient( to right, #ff512f, #f09819 );
+    right: 57px;
+    bottom: 0;
+}
+.background {
+    width: 430px;
+    height: 520px;
+    position: absolute;
+    transform: translate(-50%,-50%);
+    left: 43%;
+    top: 50%;
+}
+
+}
+@media only screen and (min-device-width: 480px) 
+                   and (max-device-width: 890px) 
+                   and (orientation: landscape) {
+
+                    .register{
+                        height: 400px!important;
+                        overflow: auto;
+                    }
+                    form{
+                        height: 400px!important;
+                        overflow: auto;
+                    }
+                    .shape:last-child {
+                        background: linear-gradient( to right, #ff512f, #f09819 );
+                        right: -30px;
+                        bottom: 100px;
+                    }
+}
+.register{
+    height: 650px;
+    width: 400px;
+    background-color: rgba(255,255,255,0.13);
+    position: absolute;
+    transform: translate(-50%,-50%);
+    top: 50%;
+    left: 50%;
+    border-radius: 10px;
+    backdrop-filter: blur(10px);
+    border: 2px solid rgba(255,255,255,0.1);
+    box-shadow: 0 0 40px rgb(8 7 16 / 60%);
+    padding: 50px 35px;
+
+}
+/* @media only screen and (orientation: landscape){
+    form{
+        height: 343px;
+        overflow: auto;
+    }
+} */
